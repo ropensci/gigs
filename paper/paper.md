@@ -1,6 +1,6 @@
 ---
 title: |
-  'gigs: A package for standardising fetal, neonatal, and child growth assessment'
+  `gigs: A package for standardising fetal, neonatal, and child growth assessment`
 tags:
   - R
   - intergrowth
@@ -19,13 +19,13 @@ authors:
     affiliation: '1'
 affiliations:
  - index: 1
-   name: Maternal, Adolescent, Reproductive and Child Health Centre, London School of Hygiene & Tropical Medicine, London, UK
+   name: Maternal, Adolescent, Reproductive and Child Health Centre, London School of Hygiene & Tropical Medicine, London, United Kingdom
    ror: 00a0jsq62
  - index: 2
-   name: Ariadne Labs, Brigham and Women’s Hospital, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, U.S.A. 
+   name: Ariadne Labs, Brigham and Women’s Hospital, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, United States of America 
    ror: 03vek6s52
 
-date: 14 December 2024
+date: 10 January 2024
 bibliography: paper.bib
 ---
 
@@ -41,7 +41,7 @@ progress towards Sustainable Development Goals and the WHO Global
 Nutrition targets. This need is the motivation for ``gigs`` - a package for 
 researchers and policymakers that facilitates the appropriate use of growth 
 standards for the determination and assessment of growth outcomes at the 
-population level (e.g., stunting, wasting, underweight and trajectories over 
+population level (e.g. stunting, wasting, underweight and trajectories over 
 time) among vulnerable infants. For clinicians, the ``gigs`` also provides 
 support in choosing which standards to use when assessing growth of individual 
 infants.
@@ -115,7 +115,7 @@ website](https://docs.ropensci.org/gigs/articles/benchmarking.html).
 In addition to the R package, a 
 [Stata package](https://www.github.com/lshtm-gigs/gigs-stata/) and 
 [SAS package](https://www.github.com/SASPAC/gigs/) are available for users of 
-these statistical softwares. All versions of ``gigs`` are already in use by 
+these statistical software. All versions of ``gigs`` are already in use by 
 researchers at LSHTM, Harvard, the [Small Vulnerable Newborn 
 Collaboration](https://www.thelancet.com/series/small-vulnerable-newborns) and 
 an international collaboration investigating stillbirths. Thanks to its speed, 
