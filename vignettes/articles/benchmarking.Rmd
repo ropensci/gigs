@@ -205,7 +205,7 @@ pkg_str <- function(pkgname) paste("R:", pkgname, packageVersion(pkg = pkgname))
 
 ver_zanthro_stata <- "1.0.2"
 ver_gigs_sas <- "0.1.8"
-ver_gigs_stata <- "1.1.1"
+ver_gigs_stata <- "1.1.3"
 if (!exists("key_pkg_label")) {
   # Generate key_pkg_label if doesn't already exist --> otherwise use cached
   # version in benchmarking.rda
@@ -380,7 +380,7 @@ foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
 ```
 
 ```{r bp_who_gs_stata, echo = FALSE, eval = FALSE}
-bp_who_gs_stata <- read.csv("exclude/statabench/stata_bench.csv")
+bp_who_gs_stata <- read.csv("exclude/statabench/statabench.csv")
 bp_who_gs_stata <- bp_who_gs_stata[bp_who_gs_stata$acronym == "who_gs", ]
 bp_who_gs_stata <- bp_who_gs_stata[, -4]
 ```
@@ -501,7 +501,7 @@ discrepancies_who_gs <- data.frame(z = c(-3.03, -2.97, 2.97, 3.03),
   )
 ```
 
-```{r discrepancies_who_gs_eval, echo = FALSE, eval = TRUE}
+```{r discrepancies_who_gs_eval, echo = FALSE}
 discrepancies_who_gs
 ```
 
@@ -587,7 +587,7 @@ foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
 ```
 
 ```{r bp_ig_nbs_stata, echo = FALSE, eval = FALSE}
-bp_ig_nbs_stata <- read.csv("exclude/statabench/stata_bench.csv")
+bp_ig_nbs_stata <- read.csv("exclude/statabench/statabench.csv")
 bp_ig_nbs_stata <- bp_ig_nbs_stata[bp_ig_nbs_stata$acronym == "ig_nbs", ]
 bp_ig_nbs_stata <- bp_ig_nbs_stata[, -4]
 ```
@@ -728,7 +728,7 @@ foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
 ```
 
 ```{r bp_ig_png_stata, echo = FALSE, eval = FALSE}
-bp_ig_png_stata <- read.csv("exclude/statabench/stata_bench.csv")
+bp_ig_png_stata <- read.csv("exclude/statabench/statabench.csv")
 bp_ig_png_stata <- bp_ig_png_stata[bp_ig_png_stata$acronym == "ig_png", ]
 bp_ig_png_stata <- bp_ig_png_stata[, -4]
 ```
@@ -843,7 +843,7 @@ foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
 ```
 
 ```{r bp_ig_fet_stata, echo = FALSE, eval = FALSE}
-bp_ig_fet_stata <- read.csv("exclude/statabench/stata_bench.csv")
+bp_ig_fet_stata <- read.csv("exclude/statabench/statabench.csv")
 bp_ig_fet_stata <- bp_ig_fet_stata[bp_ig_fet_stata$acronym == "ig_fet", ]
 bp_ig_fet_stata <- bp_ig_fet_stata[, -4]
 ```
@@ -974,57 +974,56 @@ save(file = file.path("vignettes/articles/benchmarking.rda"),
 ## Stata code
 
 ```{stata, eval = FALSE}
-// Set path to directory with benchmarking datasets
-local path = "D:\path\to\directory"
-cd "`path'"
+clear all
 
-log using "`path'\statabench.log", replace text nomsg
+local bench_folder "exclude/statabench"
+log using "`bench_folder'/statabench.log", replace text nomsg
 
 // WHO Child Growth Standards
 foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
-	use "bench_ds_who_gs.dta", clear
+	use "`bench_folder'/bench_ds_who_gs.dta", clear
 	qui drop if _n > `i'
-	di "Number of inputs: `i'"
-	bench, reps(25) restore last: ///
+	di "For who_gs gigs_stata - Number of inputs: `i'"
+	bench, reps(50) restore last: ///
 		qui egen double z_gigs = who_gs(y, "wfa", "v2z"), ///
 			xvar(x) sex(sex) sexcode(m=M, f=F)
 }
 
 foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
-	use "bench_ds_who_gs.dta", clear
+	use "`bench_folder'/bench_ds_who_gs.dta", clear
 	qui drop if _n > `i'
-	di "Number of inputs: `i'"
-	bench, reps(25) restore last: ///
+	di "For who_gs zanthro_stata - Number of inputs: `i'"
+	bench, reps(50) restore last: ///
 		qui egen z_anthro = zanthro(y, wa, WHO), xvar(x) gender(sex) ///
 			gencode(male=M, female=F) ageunit(day)
 }
 
 // IG-21st Newborn Size Standards
 foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
-	use "bench_ds_ig_nbs.dta", clear
+	use "`bench_folder'/bench_ds_ig_nbs.dta", clear
 	qui drop if _n > `i'
-	di "Number of inputs: `i'"
-	bench, reps(25) restore last: ///
+	di "For ig_nbs gigs_stata - Number of inputs: `i'"
+	bench, reps(50) restore last: ///
 		qui egen double z_gigs = ig_nbs(y, "wfga", "v2z"), ///
-			gest_days(gest_days) sex(sex) sexcode(m=M, f=F)
+			gest_days(x) sex(sex) sexcode(m=M, f=F)
 }
 
 // IG-21st Postnatal Growth Standards
 foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
-	use "bench_ds_ig_png.dta", clear
+	use "`bench_folder'/bench_ds_ig_png.dta", clear
 	qui drop if _n > `i'
-	di "Number of inputs: `i'"
-	bench, reps(25) restore last: ///
+	di "For ig_png gigs_stata - Number of inputs: `i'"
+	bench, reps(50) restore last: ///
 		qui egen double z_gigs = ig_png(y, "wfa", "v2z"), ///
 			xvar(x) sex(sex) sexcode(m=M, f=F)
 }
 
 // IG-21st Fetal Standards
 foreach i in 1 10 100 500 1000 5000 10000 25000 50000 75000 100000 {
-	use "bench_ds_ig_fet.dta", clear
+	use "`bench_folder'/bench_ds_ig_fet.dta", clear
 	qui drop if _n > `i'
-	di "Number of inputs: `i'"
-	bench, reps(25) restore last: ///
+	di "For ig_fet gigs_stata - Number of inputs: `i'"
+	bench, reps(50) restore last: ///
 		qui egen double z_gigs = ig_fet(y, "ofdfga", "v2z"), xvar(x)
 }
 
@@ -1035,7 +1034,7 @@ The resulting log file has our timings, albeit in a slightly annoying format.
 This bit of R code converts that file into a CSV for easy reading into R.
 
 ```{r extract_stata_timings, eval = FALSE}
-# logfile <- "../exclude/statabench/statabench.log"
+# The statabench log-file is made by the above code
 logfile <- readr::read_lines("exclude/statabench/statabench.log")
 
 logfile_to_df <- function(logfile, acronym) {
@@ -1059,7 +1058,8 @@ logfile_to_df <- function(logfile, acronym) {
 
 stata_bench <- purrr::map_dfr(.x = c("who_gs", "ig_nbs", "ig_png", "ig_fet"),
                               .f = \(acronym) logfile_to_df(logfile, acronym))
-write.csv(stata_bench, file = "exclude/statabench/stata_bench.csv",
+
+write.csv(stata_bench, file = "benchmarking/statabench.csv",
           row.names = FALSE)
 
 rm(logfile_to_df, logfile, stata_bench)
