@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.4.1 (2024-06-14 ucrt)",
+  "runtimePlatform": "R version 4.3.3 (2024-02-29 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -294,7 +294,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "2264.11KB",
+  "fileSize": "2270.566KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
@@ -318,7 +318,7 @@
       ],
       "name": "{gigs}: Assess Fetal, Newborn, and Child Growth with International Standards",
       "url": "https://github.com/ropensci/gigs/",
-      "description": "0.4.1.9002"
+      "description": "0.5.1"
     }
   ],
   "releaseNotes": "https://github.com/ropensci/gigs/blob/master/NEWS.md",

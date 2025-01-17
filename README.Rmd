@@ -34,6 +34,7 @@ library(gigs)
 [![codecov](https://codecov.io/github/ropensci/gigs/graph/badge.svg?token=FZcgqIpQL4)](https://codecov.io/github/ropensci/gigs)
 [![CRAN version](https://www.r-pkg.org/badges/version/gigs)](https://www.r-pkg.org/pkg/gigs)
 [![ropensci](https://badges.ropensci.org/626_status.svg)](https://github.com/ropensci/software-review/issues/626)
+[![status](https://joss.theoj.org/papers/c9986578f8e3d93f6195f03e8d23308b/status.svg)](https://joss.theoj.org/papers/c9986578f8e3d93f6195f03e8d23308b)
 <!-- badges: end -->
 
 ## Overview

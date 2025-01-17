@@ -35,7 +35,7 @@ preferred-citation:
   - family-names: Ohuma
     given-names: Eric O
   year: '2024'
-  notes: 0.4.1.9002
+  notes: 0.5.1
   url: https://github.com/ropensci/gigs/
 repository-code: https://github.com/ropensci/gigs
 url: https://github.com/ropensci/gigs/
@@ -62,7 +62,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
   version: '>= 4.1.0'
 - type: software
   title: checkmate
@@ -75,7 +75,7 @@ references:
     given-names: Michel
     email: michellang@gmail.com
     orcid: https://orcid.org/0000-0001-9754-0393
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.checkmate
 - type: software
   title: gamlss.dist
@@ -93,7 +93,7 @@ references:
     given-names: Robert
     email: r.rigby@gre.ac.uk
     orcid: https://orcid.org/0000-0003-3853-1707
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.gamlss.dist
 - type: software
   title: stats
@@ -104,7 +104,7 @@ references:
   institution:
     name: R Foundation for Statistical Computing
     address: Vienna, Austria
-  year: '2024'
+  year: '2025'
 - type: software
   title: rlang
   abstract: 'rlang: Functions for Base Types and Core R and ''Tidyverse'' Features'
@@ -118,7 +118,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.rlang
 - type: software
   title: vctrs
@@ -136,7 +136,7 @@ references:
   - family-names: Vaughan
     given-names: Davis
     email: davis@posit.co
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.vctrs
   version: '>= 0.4.0'
 - type: software
@@ -149,7 +149,7 @@ references:
   - family-names: Csárdi
     given-names: Gábor
     email: csardi.gabor@gmail.com
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.cli
 - type: software
   title: knitr
@@ -162,7 +162,7 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.knitr
 - type: software
   title: rmarkdown
@@ -206,7 +206,7 @@ references:
     given-names: Richard
     email: rich@posit.co
     orcid: https://orcid.org/0000-0003-3925-190X
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.rmarkdown
 - type: software
   title: testthat
@@ -218,7 +218,7 @@ references:
   - family-names: Wickham
     given-names: Hadley
     email: hadley@posit.co
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.testthat
   version: '>= 3.0.0'
 - type: software
@@ -244,7 +244,7 @@ references:
     given-names: Davis
     email: davis@posit.co
     orcid: https://orcid.org/0000-0003-4777-038X
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.dplyr
 - type: software
   title: units
@@ -266,7 +266,7 @@ references:
     given-names: Iñaki
     email: iucar@fedoraproject.org
     orcid: https://orcid.org/0000-0001-6403-5550
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.units
 - type: software
   title: withr
@@ -291,7 +291,7 @@ references:
     email: hadley@posit.co
   - family-names: Chang
     given-names: Winston
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.withr
 - type: software
   title: ggsci
@@ -304,7 +304,7 @@ references:
     given-names: Nan
     email: me@nanx.me
     orcid: https://orcid.org/0000-0002-0250-5673
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.ggsci
 - type: software
   title: bench
@@ -318,7 +318,7 @@ references:
   - family-names: Vaughan
     given-names: Davis
     email: davis@posit.co
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.bench
 - type: software
   title: cowplot
@@ -331,7 +331,7 @@ references:
     given-names: Claus O.
     email: wilke@austin.utexas.edu
     orcid: https://orcid.org/0000-0002-7470-9261
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.cowplot
 - type: software
   title: viridis
@@ -343,8 +343,23 @@ references:
   - family-names: Garnier
     given-names: Simon
     email: garnier@njit.edu
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.viridis
+- type: software
+  title: mfp
+  abstract: 'mfp: Multivariable Fractional Polynomials'
+  notes: Suggests
+  url: https://github.com/georgheinze/mfp/issues/
+  repository: https://CRAN.R-project.org/package=mfp
+  authors:
+  - family-names: Ambler
+    given-names: Gareth
+    email: gareth@stats.ucl.ac.uk
+  - family-names: Benner
+    given-names: Axel
+    email: benner@dkfz.de
+  year: '2025'
+  doi: 10.32614/CRAN.package.mfp
 - type: software
   title: tidyr
   abstract: 'tidyr: Tidy Messy Data'
@@ -360,7 +375,7 @@ references:
     email: davis@posit.co
   - family-names: Girlich
     given-names: Maximilian
-  year: '2024'
+  year: '2025'
   doi: 10.32614/CRAN.package.tidyr
   version: '>= 1.0.0'
 
