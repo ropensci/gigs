@@ -95,8 +95,8 @@ standards and INTERGROWTH-21^st^ Postnatal Growth of Preterm Infants standards.
 
 Next, ``gigs`` offers specific functions (``classify_growth()``, ``gigs_waz()``,
 and friends) which select an appropriate growth standard to apply to each 
-observation in flat, tabular dataset. Growth standards are selected based on the
-chronological and gestational age for each observation, and the specific 
+observation in a flat, tabular dataset. Growth standards are selected based on 
+the chronological and gestational age for each observation, and the specific 
 criteria can be found in the [package 
 documentation](https://docs.ropensci.org/gigs/reference/gigs_zscoring.html). 
 These functions can be used to investigate growth indicators including 
@@ -107,16 +107,16 @@ weight-for-age (underweight), and micro/macrocephaly.
 When benchmarked against each other, ``gigs`` for R outperforms almost all 
 the packages mentioned above, or is at most a few milliseconds slower. It does 
 this whilst checking inputs to ensure they are formatted correctly, to make life
-easier for ``gigs`` users. For example, it will detect missing (`NA`) or 
-infinite (`-Inf`/`Inf`) numeric inputs, and flag these to the user at the 
+easier for ``gigs`` users. For example, ``gigs`` will detect missing (`NA`) or 
+infinite (`-Inf`/`Inf`) numeric inputs, and flag these to the user in the 
 console. Full benchmarking results are available on the [package documentation 
 website](https://docs.ropensci.org/gigs/articles/benchmarking.html).
 
 In addition to the R package, a 
 [Stata package](https://www.github.com/lshtm-gigs/gigs-stata/) and 
 [SAS package](https://www.github.com/SASPAC/gigs/) are available for users of 
-these statistical software. All versions of ``gigs`` are already in use by 
-researchers at LSHTM, Harvard, the [Small Vulnerable Newborn 
+those statistical applications. All versions of ``gigs`` are already in use
+by researchers at LSHTM, Harvard, the [Small Vulnerable Newborn 
 Collaboration](https://www.thelancet.com/series/small-vulnerable-newborns) and 
 an international collaboration investigating stillbirths. Thanks to its speed, 
 input checking, and unit test-backed accuracy, we believe ``gigs`` will be used 
