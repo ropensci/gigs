@@ -9,7 +9,7 @@ tags:
   - growth analysis
 authors:
   - name: Simon R. Parker
-    orcid: 0000-0003-0872-7098
+    orcid: 0009-0003-8214-4496
     affiliation: '1'
   - name: Linda Vesel
     orcid: 0000-0003-3753-4172
@@ -25,7 +25,7 @@ affiliations:
    name: Ariadne Labs, Brigham and Women’s Hospital, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, United States of America 
    ror: 03vek6s52
 
-date: 10 January 2024
+date: 20 January 2025
 bibliography: paper.bib
 ---
 
