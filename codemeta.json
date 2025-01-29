@@ -8,7 +8,7 @@
   "codeRepository": "https://github.com/ropensci/gigs/",
   "issueTracker": "https://github.com/ropensci/gigs/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.5.2",
+  "version": "0.5.2.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -294,7 +294,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "2270.571KB",
+  "fileSize": "2270.606KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
