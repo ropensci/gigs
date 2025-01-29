@@ -1,8 +1,9 @@
-# gigs (development version)
+# gigs 0.5.2
 
 - More changes to online articles to facilitate rOpenSci website building.
 - Improved `.gigs_options` docs to mention the `"handle_missing_levels"`.
 - Minor docs updates.
+- Now cached with Zenodo.
 
 # gigs 0.5.1
 

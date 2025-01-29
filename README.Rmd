@@ -1,3 +1,4 @@
+git pull
 ---
 output: github_document
 ---
