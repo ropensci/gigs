@@ -1,6 +1,5 @@
 ---
-title: |
-  `gigs: A package for standardising fetal, neonatal, and child growth assessment`
+title: `gigs: A package for standardising fetal, neonatal, and child growth assessment`
 tags:
   - R
   - intergrowth
