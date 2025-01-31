@@ -294,11 +294,10 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "2270.606KB",
+  "fileSize": "2270.617KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
-      "datePublished": "2024",
       "author": [
         {
           "@type": "Person",
@@ -318,7 +317,7 @@
       ],
       "name": "{gigs}: Assess Fetal, Newborn, and Child Growth with International Standards",
       "url": "https://github.com/ropensci/gigs/",
-      "description": "0.5.2"
+      "description": "0.5.2.9000"
     }
   ],
   "releaseNotes": "https://github.com/ropensci/gigs/blob/master/NEWS.md",
