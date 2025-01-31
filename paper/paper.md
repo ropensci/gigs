@@ -41,9 +41,8 @@ Nutrition targets. This need is the motivation for ``gigs`` - a package for
 researchers and policymakers that facilitates the appropriate use of growth 
 standards for the determination and assessment of growth outcomes at the 
 population level (e.g. stunting, wasting, underweight and trajectories over 
-time) among vulnerable infants. For clinicians, the ``gigs`` also provides 
-support in choosing which standards to use when assessing growth of individual 
-infants.
+time) among vulnerable infants. For clinicians, ``gigs`` also provides support 
+in choosing which standards to use when assessing growth of individual infants.
 
 # Statement of need
 
