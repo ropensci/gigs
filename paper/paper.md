@@ -1,5 +1,5 @@
 ---
-title: `gigs: A package for standardising fetal, neonatal, and child growth assessment`
+title: 'gigs: A package for standardising fetal, neonatal, and child growth assessment'
 tags:
   - R
   - intergrowth
@@ -24,7 +24,7 @@ affiliations:
    name: Ariadne Labs, Brigham and Women’s Hospital, Harvard T.H. Chan School of Public Health, Boston, Massachusetts, United States of America 
    ror: 03vek6s52
 
-date: 20 January 2025
+date: 31 January 2025
 bibliography: paper.bib
 ---
 
