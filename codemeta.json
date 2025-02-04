@@ -294,30 +294,76 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "2270.617KB",
+  "fileSize": "2271.909KB",
   "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "datePublished": "2025",
+      "author": [
+        {
+          "@type": "Person",
+          "givenName": ["Simon", "R"],
+          "familyName": "Parker",
+          "@id": "https://orcid.org/0009-0003-8214-4496"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Linda",
+          "familyName": "Vesel",
+          "@id": "https://orcid.org/0000-0003-3753-4172"
+        },
+        {
+          "@type": "Person",
+          "givenName": ["Eric", "O"],
+          "familyName": "Ohuma",
+          "@id": "https://orcid.org/0000-0002-3116-2593"
+        }
+      ],
+      "name": "{gigs: A package for standardising fetal, neonatal, and child growth assessment}",
+      "identifier": "10.21105/joss.07655",
+      "description": "gigs v0.5.2.9000",
+      "pagination": "7655",
+      "@id": "https://doi.org/10.21105/joss.07655",
+      "sameAs": "https://doi.org/10.21105/joss.07655",
+      "isPartOf": {
+        "@type": "PublicationIssue",
+        "issueNumber": "106",
+        "datePublished": "2025",
+        "isPartOf": {
+          "@type": ["PublicationVolume", "Periodical"],
+          "volumeNumber": "10",
+          "name": "Journal of Open Source Software"
+        }
+      }
+    },
     {
       "@type": "SoftwareSourceCode",
       "author": [
         {
           "@type": "Person",
           "givenName": ["Simon", "R"],
-          "familyName": "Parker"
+          "familyName": "Parker",
+          "@id": "https://orcid.org/0009-0003-8214-4496"
         },
         {
           "@type": "Person",
           "givenName": "Linda",
-          "familyName": "Vesel"
+          "familyName": "Vesel",
+          "@id": "https://orcid.org/0000-0003-3753-4172"
         },
         {
           "@type": "Person",
           "givenName": ["Eric", "O"],
-          "familyName": "Ohuma"
+          "familyName": "Ohuma",
+          "@id": "https://orcid.org/0000-0002-3116-2593"
         }
       ],
-      "name": "{gigs}: Assess Fetal, Newborn, and Child Growth with International Standards",
+      "name": "{gigs: Assess Fetal, Newborn, and Child Growth with International Standards}",
+      "identifier": "10.5281/zenodo.14763686",
       "url": "https://github.com/ropensci/gigs/",
-      "description": "0.5.2.9000"
+      "description": "gigs v0.5.2.9000",
+      "@id": "https://doi.org/10.5281/zenodo.14763686",
+      "sameAs": "https://doi.org/10.5281/zenodo.14763686"
     }
   ],
   "releaseNotes": "https://github.com/ropensci/gigs/blob/master/NEWS.md",

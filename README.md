@@ -515,8 +515,10 @@ Health Centre, London School of Hygiene & Tropical Medicine
 
 ### Citation
 
-Parker SR, Vesel L, Ohuma EO (2024). *gigs: Assess Fetal, Newborn, and
-Child Growth*. <https://github.com/ropensci/gigs/>.
+Parker SR, Vesel L, Ohuma EO (2025). *gigs: gigs: A package for
+standardising fetal, neonatal, and child growth assessment*. **Journal
+of Open Source Software**, 10(106), 7655.
+<https://doi.org/10.21105/joss.07655>.
 
 ## Code of Conduct
 

@@ -1,9 +1,34 @@
+citHeader("If you use this software, please cite our article in the
+  Journal of Open Source Software:")
+
 bibentry(
-  bibtype  = "Manual",
-  title    = "{gigs}: Assess Fetal, Newborn, and Child Growth with International Standards",
-  author   = c(person(given = c("Simon", "R"), family = "Parker"), person("Linda", "Vesel"), person(given = c("Eric", "O"), family = "Ohuma")),
-  year     = sub("-.*", "", meta$Date),
-  note     = meta$Version,
-  url      = "https://github.com/ropensci/gigs/"
+  key       = "gigs_paper",
+  bibtype   = "Article",
+  title     = "{gigs: A package for standardising fetal, neonatal, and child growth assessment}",
+  author    = c(person(given = c("Simon", "R"), family = "Parker", comment = c(ORCID = "0009-0003-8214-4496")),
+                person("Linda", "Vesel", comment = c(ORCID = "0000-0003-3753-4172")),
+                person(given = c("Eric", "O"), family = "Ohuma", comment = c(ORCID = "0000-0002-3116-2593"))),
+  journal   = "Journal of Open Source Software",
+  publisher = "Open Journals",
+  year      = "2025",
+  month     = "02",
+  volume    = "10",
+  number    = "106",
+  pages     = "7655",
+  doi       = "10.21105/joss.07655",
+  issn      = "2475-9066",
+  note     = paste0("gigs v", meta$Version)
 )
 
+bibentry(
+  key      = "gigs_zenodo",
+  bibtype  = "Manual",
+  title    = "{gigs: Assess Fetal, Newborn, and Child Growth with International Standards}",
+  author    = c(person(given = c("Simon", "R"), family = "Parker", comment = c(ORCID = "0009-0003-8214-4496")),
+                person("Linda", "Vesel", comment = c(ORCID = "0000-0003-3753-4172")),
+                person(given = c("Eric", "O"), family = "Ohuma", comment = c(ORCID = "0000-0002-3116-2593"))),
+  year     = sub("-.*", "", meta$Date),
+  note     = paste0("gigs v", meta$Version),
+  doi      = "10.5281/zenodo.14763686",
+  url      = "https://github.com/ropensci/gigs/"
+)
