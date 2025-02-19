@@ -128,8 +128,11 @@ gigs_input_options_set <- function(new_value, silent = FALSE) {
 #' @name .gigs_options
 #' @title Package-level gigs options
 #' @description An environment containing seven named character vectors. The
-#'   first six define how gigs handles input data with missing, undefined, or
-#'   invalid elements. The last (`"handle_unused_levels"`)
+#'   first six define how **gigs** handles input data with missing, undefined,
+#'   or invalid elements in input data. The last (`"handle_unused_levels"`)
+#'   defines how **gigs** responds to unused factor levels when performing
+#'   growth categorisations.
+#'
 #'   * `"handle_missing_data"` - How should gigs handle missing (`NA`) elements?
 #'   * `"handle_undefined_data"` - How should gigs handle undefined (`NaN`,
 #'       `Inf`, `-Inf`) elements?
