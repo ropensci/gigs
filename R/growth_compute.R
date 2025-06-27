@@ -42,7 +42,8 @@
 #' )
 #' @inherit categorise_sfga details note
 #' @note Input vectors are recycled by [vctrs::vec_recycle_common()], and must
-#'   adhere to the [vctrs] recycling rules.
+#'   adhere to the
+#'   \link[=vctrs::vector_recycling_rules]{`vctrs` recycling rules}.
 #' @inherit categorise_sfga references
 #' @export
 compute_sfga <- function(weight_kg,

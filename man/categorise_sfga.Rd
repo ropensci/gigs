@@ -39,7 +39,8 @@ Large-for-GA          \tab \code{"LGA"}     \tab \code{p} > 0.9
 }
 \note{
 Input vectors are recycled by \code{\link[vctrs:vec_recycle]{vctrs::vec_recycle_common()}}, and must
-adhere to the \link{vctrs} recycling rules.
+adhere to the
+\link[=vctrs::vector_recycling_rules]{\code{vctrs} recycling rules}.
 }
 \examples{
 p <- c(0.01, 0.07, 0.25, 0.75, 0.93, 0.99)

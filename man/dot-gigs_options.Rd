@@ -9,8 +9,10 @@ option.
 }
 \description{
 An environment containing seven named character vectors. The
-first six define how gigs handles input data with missing, undefined, or
-invalid elements. The last (\code{"handle_unused_levels"})
+first six define how \strong{gigs} handles input data with missing, undefined,
+or invalid elements in input data. The last (\code{"handle_unused_levels"})
+defines how \strong{gigs} responds to unused factor levels when performing
+growth categorisations.
 \itemize{
 \item \code{"handle_missing_data"} - How should gigs handle missing (\code{NA}) elements?
 \item \code{"handle_undefined_data"} - How should gigs handle undefined (\code{NaN},

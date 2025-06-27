@@ -330,8 +330,8 @@ NULL
 #'   and warn you. You can customise this behaviour using the [GIGS
 #'   package-level options][gigs_options].
 #' @note Input vectors other than `acronym` and `family` are recycled by
-#'   [vctrs::vec_recycle_common()], and must adhere to the [vctrs] recycling
-#'   rules.
+#'   [vctrs::vec_recycle_common()], and must adhere to the
+#'   \link[=vctrs::vector_recycling_rules]{`vctrs` recycling rules}.
 #' @keywords internal
 NULL
 

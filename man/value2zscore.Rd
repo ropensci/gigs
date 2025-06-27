@@ -98,8 +98,8 @@ growth standards
 }
 \note{
 Inputs other than \code{acronym} and \code{family} will be recycled by
-\code{\link[vctrs:vec_recycle]{vctrs::vec_recycle_common()}}, and must adhere to the \link{vctrs} recycling
-rules.
+\code{\link[vctrs:vec_recycle]{vctrs::vec_recycle_common()}}, and must adhere to the
+\link[=vctrs::vector_recycling_rules]{\code{vctrs} recycling rules}.
 }
 \examples{
 # Convert in the weight-for-age standard from the WHO Child Growth Standards

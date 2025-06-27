@@ -34,7 +34,8 @@
 #' @seealso [classify_sfga()], which wraps this function for easy use in
 #'   `data.frame`-based analytic pipelines.
 #' @note Input vectors are recycled by [vctrs::vec_recycle_common()], and must
-#'   adhere to the [vctrs] recycling rules.
+#'   adhere to the
+#'   \link[=vctrs::vector_recycling_rules]{`vctrs` recycling rules}.
 #' @references
 #' WHO. **Physical status: the use and interpretation of anthropometry. Report
 #' of a WHO Expert Committee.** *World Health Organisation Technical Report
