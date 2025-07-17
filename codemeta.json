@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.3.3 (2024-02-29 ucrt)",
+  "runtimePlatform": "R version 4.5.1 (2025-06-13 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -294,7 +294,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "2271.909KB",
+  "fileSize": "2272.753KB",
   "citation": [
     {
       "@type": "ScholarlyArticle",
@@ -367,7 +367,7 @@
     }
   ],
   "releaseNotes": "https://github.com/ropensci/gigs/blob/master/NEWS.md",
-  "readme": "https://github.com/ropensci/gigs/blob/master/README.md",
+  "readme": "https://github.com/ropensci/gigs/blob/main/README.md",
   "contIntegration": ["https://github.com/ropensci/gigs/actions/workflows/R-CMD-check.yaml", "https://github.com/ropensci/gigs/actions?query=workflow%3Apkgcheck", "https://codecov.io/github/ropensci/gigs"],
   "developmentStatus": "https://www.repostatus.org/#active",
   "review": {
