@@ -439,7 +439,7 @@ We have benchmarked these implementations against each other for conversion of v
 `r intergrowth21st` standards. The table below shows the relative speed of each
 software package when processing 100,000 inputs. The code used to generate these
 timings can be seen online in the **gigs** benchmarking
-[article](https://ropensci.github.io/gigs/articles/benchmarking.html).
+[article](https://docs.ropensci.org/gigs/articles/benchmarking.html).
 
 | Software        | Platform | WHO (0-5 years) (ms)                      | `r ig21st` NBS (ms)                    | `r ig21st` PNG (ms)                    | `r ig21st` Fetal (ms)                   |
 |-----------------|----------|-------------------------------------------|----------------------------------------|----------------------------------------|-----------------------------------------|

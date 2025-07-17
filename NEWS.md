@@ -1,7 +1,7 @@
 # gigs (development version)
 
 - Documentation updates due to JOSS publication.
-- Other docs updates to fix minor errors.
+- Other docs updates to fix minor errors with R CMD check.
 
 # gigs 0.5.2
 
