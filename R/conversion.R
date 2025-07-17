@@ -77,7 +77,7 @@
 #' * For the WHO Growth standards see the [`gigs::who_gs`][who_gs] documentation
 #' @note Inputs other than `acronym` and `family` will be recycled by
 #'   [vctrs::vec_recycle_common()], and must adhere to the
-#'   \link[=vctrs::vector_recycling_rules]{`vctrs` recycling rules}.
+#'   \link[vctrs:theory-faq-recycling]{vctrs recycling rules}.
 #' @seealso [report_units()] will tell you the units needed for `y` and `x`, for
 #'   any combination of `family` and `acronym`.
 #' @returns Numeric vector of z-scores/centiles with length equal to the longest

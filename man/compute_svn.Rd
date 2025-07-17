@@ -63,7 +63,7 @@ appropriate-for-gestational age; LGA, large-for-gestational age.
 \note{
 Input vectors are recycled by \code{\link[vctrs:vec_recycle]{vctrs::vec_recycle_common()}}, and must
 adhere to the
-\link[=vctrs::vector_recycling_rules]{\code{vctrs} recycling rules}.
+\link[vctrs:theory-faq-recycling]{vctrs recycling rules}.
 }
 \examples{
 compute_svn(

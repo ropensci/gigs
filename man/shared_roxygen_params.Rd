@@ -24,6 +24,6 @@ This roxygen block makes sharing these parameters more simple.
 \note{
 Input vectors other than \code{acronym} and \code{family} are recycled by
 \code{\link[vctrs:vec_recycle]{vctrs::vec_recycle_common()}}, and must adhere to the
-\link[=vctrs::vector_recycling_rules]{\code{vctrs} recycling rules}.
+\link[vctrs:theory-faq-recycling]{vctrs recycling rules}.
 }
 \keyword{internal}

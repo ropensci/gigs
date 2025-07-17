@@ -17,9 +17,9 @@
 #' @returns An object of class factor with the same length as `p`, containing
 #'   size-for-GA classifications. If `severe = FALSE`, levels are `c("SGA",
 #'   "AGA", "LGA")`. If `severe = TRUE`, levels are `c("SGA(<3)", "SGA", "AGA",
-#'   "LGA")`. By default, gigs will inform you this object contains unused 
-#'   factor levels. You can change this behaviour using the 
-#'   [GIGS package-level option][gigs_options] 
+#'   "LGA")`. By default, gigs will inform you this object contains unused
+#'   factor levels. You can change this behaviour using the
+#'   [GIGS package-level option][gigs_options]
 #'   `.gigs_options$handle_unused_levels`.
 #' @details Cut-offs for size-for-gestational age categorisations are:
 #'
@@ -35,7 +35,7 @@
 #'   `data.frame`-based analytic pipelines.
 #' @note Input vectors are recycled by [vctrs::vec_recycle_common()], and must
 #'   adhere to the
-#'   \link[=vctrs::vector_recycling_rules]{`vctrs` recycling rules}.
+#'   \link[vctrs:theory-faq-recycling]{vctrs recycling rules}.
 #' @references
 #' WHO. **Physical status: the use and interpretation of anthropometry. Report
 #' of a WHO Expert Committee.** *World Health Organisation Technical Report
@@ -64,9 +64,9 @@ categorise_sfga <- function(p, severe = FALSE) {
 #' @returns An object of class factor with the same length as the longest input
 #'   vector, containing small vulnerable newborn classifications. Its levels
 #'   are `c("Preterm SGA", "Preterm AGA", "Preterm LGA", "Term SGA", "Term AGA",
-#'   "Term LGA")`. By default, gigs will inform you this object contains unused 
-#'   factor levels. You can change this behaviour using the 
-#'   [GIGS package-level option][gigs_options] 
+#'   "Term LGA")`. By default, gigs will inform you this object contains unused
+#'   factor levels. You can change this behaviour using the
+#'   [GIGS package-level option][gigs_options]
 #'   `.gigs_options$handle_unused_levels`.
 #' @examples
 #' p <- c(0.01, 0.07, 0.25, 0.75, 0.93, 0.99)
@@ -121,9 +121,9 @@ categorise_svn <- function(p, gest_days) {
 #'   vector, containing stunting classifications. Its levels are
 #'   `c("stunting_severe", "stunting", "not_stunting")` if `outliers =
 #'   FALSE` (the default), else `c("stunting_severe", "stunting",
-#'   "not_stunting", "outlier")`. By default, gigs will inform you this object 
-#'   contains unused factor levels. You can change this behaviour using the 
-#'   [GIGS package-level option][gigs_options] 
+#'   "not_stunting", "outlier")`. By default, gigs will inform you this object
+#'   contains unused factor levels. You can change this behaviour using the
+#'   [GIGS package-level option][gigs_options]
 #'   `.gigs_options$handle_unused_levels`.
 #' @details Cut-offs for stunting categories are:
 #'
@@ -171,10 +171,10 @@ categorise_stunting <- function(lhaz, outliers = FALSE) {
 #' @returns An object of class factor with the same length as `wlz`, containing
 #'   wasting classifications. Its levels are `c("wasting_severe", "wasting",
 #'   "not_wasting", "overweight")` if `outliers = FALSE` (the default), else
-#'   `c("wasting_severe", "wasting", "not_wasting", "overweight", "outlier")`. 
+#'   `c("wasting_severe", "wasting", "not_wasting", "overweight", "outlier")`.
 #'   By default, gigs will inform you this object contains unused factor levels.
-#'   You can change this behaviour using the 
-#'   [GIGS package-level option][gigs_options] 
+#'   You can change this behaviour using the
+#'   [GIGS package-level option][gigs_options]
 #'   `.gigs_options$handle_unused_levels`.
 #' @details Cut-offs for wasting categories are:
 #'
@@ -215,9 +215,9 @@ categorise_wasting <- function(wlz, outliers = FALSE) {
 #'   weight-for-age classifications. Its levels are `c("underweight_severe",
 #'   "underweight", "normal", "overweight")` if `outliers = FALSE` (the
 #'   default), else `c("underweight_severe", "underweight", "normal",
-#'   "overweight", "outlier")`.  By default, gigs will inform you this object 
-#'   contains unused factor levels. You can change this behaviour using the 
-#'   [GIGS package-level option][gigs_options] 
+#'   "overweight", "outlier")`.  By default, gigs will inform you this object
+#'   contains unused factor levels. You can change this behaviour using the
+#'   [GIGS package-level option][gigs_options]
 #'   `.gigs_options$handle_unused_levels`.
 #' @details Cut-offs for weight-for-age categories are:
 #'
@@ -253,9 +253,9 @@ categorise_wfa <- function(waz, outliers = FALSE) {
 #'   head circumference-for-age classifications. Its levels are
 #'   `c("microcephaly_severe", "microcephaly", "normal_headcirc",
 #'   "macrocephaly", "macrocephaly_severe")`. By default, gigs will inform you
-#'   this object contains unused factor levels. You can change this behaviour 
-#'   using the [GIGS package-level option][gigs_options] 
-#'   `.gigs_options$handle_unused_levels`. 
+#'   this object contains unused factor levels. You can change this behaviour
+#'   using the [GIGS package-level option][gigs_options]
+#'   `.gigs_options$handle_unused_levels`.
 #' @details Cut-offs for head size categories are:
 #'
 #'   \tabular{lll}{
@@ -420,9 +420,9 @@ categorise_headsize_internal <- function(hcaz) {
 
 #' Handle unused factor levels in categorise_*_internal() function outputs
 #' @param fct A factor, from a categorise_*_internal() function
-#' @param outcome A single-length character vector used to denote the 
-#'   classification being done. Should be one of `c("size-for-GA", 
-#'   "small vulnerable newborns", "stunting", "wasting", "weight-for-age 
+#' @param outcome A single-length character vector used to denote the
+#'   classification being done. Should be one of `c("size-for-GA",
+#'   "small vulnerable newborns", "stunting", "wasting", "weight-for-age
 #'   (underweight)", "head size")`. Is case-sensitive.
 #' @returns A factor with unused levels dropped/kept based on how a user has set
 #'   `.gigs_options$handle_unused_levels`.
@@ -437,7 +437,7 @@ handle_factor_levels <- function(fct, outcome) {
       class = "gigs_handle_fctr_lvls_bad_outcome_str",
       .internal = TRUE
     )
-  }   
+  }
   if (.gigs_options$handle_unused_levels %in% c("keep_silent", "keep_warn")) {
     if (.gigs_options$handle_unused_levels == "keep_warn") {
       unused <- setdiff(levels(fct), fct)
