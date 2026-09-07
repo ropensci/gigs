@@ -476,7 +476,7 @@ are implemented but not others.
 | [nutriverse/intergrowth](https://github.com/nutriverse/intergrowth/) | R | ❌ | ❌ | ❌ | ⚠️ | Values → z-scores/centiles |
 | [sitar](https://cran.r-project.org/web/packages/sitar/index.html) | R | ✅ | ❌ | ❌ | ❌ | Values ↔ z-scores/centiles |
 | [zscorer](https://cran.r-project.org/web/packages/zscorer/index.html) | R | ✅ | ❌ | ❌ | ❌ | Values → z-scores/centiles |
-| [gigs](https://www.github.com/ropensci/gigs-stata/) (Stata) | Stata | ✅ | ✅ | ✅ | ✅ | Values ↔ z-scores/centiles |
+| [gigs](https://www.github.com/lshtm-gigs/gigs-stata/) (Stata) | Stata | ✅ | ✅ | ✅ | ✅ | Values ↔ z-scores/centiles |
 | [zanthro](https://journals.sagepub.com/doi/epdf/10.1177/1536867X1301300211) (Stata) | Stata | ✅ | ❌ | ❌ | ❌ | Values → z-scores/centiles |
 | [gigs](https://github.com/SASPAC/gigs/) (SAS) | SAS | ✅ | ✅ | ✅ | ✅ | Values ↔ z-scores/centiles |
 
@@ -498,7 +498,7 @@ online in the **gigs** benchmarking
 | [nutriverse/intergrowth](https://github.com/nutriverse/intergrowth/) | R | ❌ | ❌ | ❌ | 17 |
 | [sitar](https://cran.r-project.org/web/packages/sitar/index.html) | R | 46 | ❌ | ❌ | ❌ |
 | [zscorer](https://cran.r-project.org/web/packages/zscorer/index.html) | R | NA | ❌ | ❌ | ❌ |
-| [gigs](https://www.github.com/ropensci/gigs-stata/) (Stata) | Stata | 351 | 382 | 108 | 58 |
+| [gigs](https://www.github.com/lshtm-gigs/gigs-stata/) (Stata) | Stata | 351 | 382 | 108 | 58 |
 | [zanthro](https://journals.sagepub.com/doi/epdf/10.1177/1536867X1301300211) (Stata) | Stata | 1063 | ❌ | ❌ | ❌ |
 | [gigs](https://github.com/SASPAC/gigs/) (SAS) | SAS | 186 | 187 | 89 | 90 |
 
